@@ -12,7 +12,20 @@ To use the dataset for evaluation of traffic forecasting models, we processed th
 ## [Link](https://drive.google.com/drive/folders/14i4stoWQcQr6mVXtXKGx2lLw12Cn8kg0?usp=sharing) For the Data
 ###### The dataset is composed of:
 - **urban-core.csv**: speed matrix including the road segments in _urban-core_
+  - column 1: Link ID
+  - column 2: Link ID (last 5 digits)
+  - columns 3 & 4: center point of each road segment
+  - column 5: speed limit
+  - column 6: road segment length
+  - column 7: direction (upward or downward)
+  - columns 8~8647: average speeds in 5-min frequency (2018/04/01 00:00 ~ 2018/04/30 11:55)
 - **urban-mix.csv**: speed matrix including the road segments in _urban-mix_
+  - column 1: Link ID
+  - columns 2 & 3: start point of each road segment
+  - columns 4 & 5: end point of each road segment
+  - column 6: speed limit
+  - column 7: -
+  - columns 8~8647: average speeds in 5-min frequency (2018/04/01 00:00 ~ 2018/04/30 11:55)
 - **Adj(urban-core).csv**: adjacency matrix for _urban-core_. The order of nodes are the same in speed matrix file and adjacency matrix file.
 - **Adj(urban-mix).csv**: adjacency matrix for _urban-mix_. The order of nodes are the same in speed matrix file and adjacency matrix file.
 
